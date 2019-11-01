@@ -1,0 +1,17 @@
+/* Feuille de style page d'aterrrisage */
+body
+{
+	background-image: url("image/trade.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.page1{
+margin-left: auto !important;
+margin-right: auto !important;
+margin-top: 12% !important;
+text-align: center !important;
+background-color: rgba(220, 220, 220, 0.5 )!important;
+}
+

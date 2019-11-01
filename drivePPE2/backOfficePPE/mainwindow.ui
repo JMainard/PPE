@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1276</width>
+    <height>547</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="labelNomUtilisateur">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Utilisateur</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelTab">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bitstream Charter</family>
+          <pointsize>16</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+font: 75 16pt &quot;Bitstream Charter&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Produit à modifier</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0" rowspan="10">
+     <widget class="QTableWidget" name="tableWidgetProdAVerif">
+      <property name="minimumSize">
+       <size>
+        <width>450</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Numero</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Produit</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Variété</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Quantité</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Catégorie</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Unité de mesure</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PrixTTC (en €)</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PrixHT (en €)</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PrixKG (en €)</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Photo</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DLC</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="labelProduit">
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 oblique 14pt &quot;Cantarell&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Produit : </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditProduit">
+        <property name="minimumSize">
+         <size>
+          <width>125</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="labelDesc">
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 oblique 14pt &quot;Cantarell&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Variété : </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditDesc">
+        <property name="minimumSize">
+         <size>
+          <width>125</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout_12">
+      <item>
+       <widget class="QLabel" name="labelQuantite">
+        <property name="styleSheet">
+         <string notr="true">font: 75 oblique 14pt &quot;Cantarell&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Quantité : </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditQuantiteProd"/>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="labelCategorie">
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 oblique 14pt &quot;Cantarell&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Catégorie : </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditCategorie">
+        <property name="minimumSize">
+         <size>
+          <width>125</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="6" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout_11">
+      <item>
+       <widget class="QLabel" name="labelUniteMesure">
+        <property name="styleSheet">
+         <string notr="true">font: 75 oblique 14pt &quot;Cantarell&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Unité de mesure : </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditUniteMesure"/>
+      </item>
+     </layout>
+    </item>
+    <item row="7" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QLabel" name="labelPrixTTC">
+        <property name="styleSheet">
+         <string notr="true">font: 75 oblique 14pt &quot;Cantarell&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Prix TTC (en €) :</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditPrixTTC"/>
+      </item>
+     </layout>
+    </item>
+    <item row="8" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <item>
+       <widget class="QLabel" name="labelPrixHT">
+        <property name="styleSheet">
+         <string notr="true">font: 75 oblique 14pt &quot;Cantarell&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Prix HT (en €) : </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditPrixHT"/>
+      </item>
+     </layout>
+    </item>
+    <item row="9" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <item>
+       <widget class="QLabel" name="labelPrixKG">
+        <property name="styleSheet">
+         <string notr="true">font: 75 oblique 14pt &quot;Cantarell&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Prix KG (en €) : </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditPrixKg"/>
+      </item>
+     </layout>
+    </item>
+    <item row="10" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="labelCheminPhotoProd">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelPhotoProd">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="11" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="pushButtonValiderProd">
+          <property name="styleSheet">
+           <string notr="true">font: 75 oblique 14pt &quot;Cantarell&quot;;</string>
+          </property>
+          <property name="text">
+           <string>&amp;Valider</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonModifProd">
+          <property name="styleSheet">
+           <string notr="true">font: 75 oblique 14pt &quot;Cantarell&quot;;</string>
+          </property>
+          <property name="text">
+           <string>&amp;Modifier</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonSuppProd">
+          <property name="styleSheet">
+           <string notr="true">font: 75 oblique 14pt &quot;Cantarell&quot;;</string>
+          </property>
+          <property name="text">
+           <string>&amp;Supprimer</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+   <zorder>tableWidgetProdAVerif</zorder>
+   <zorder></zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1276</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>backOfficePPE</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

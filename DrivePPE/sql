@@ -1,0 +1,34 @@
+Info pour point relais
+	-id
+	-Nom du gerant
+	-Prenom
+	-Nom de l'entrprise
+	-(Quelle type de magasin)
+	-CP
+	-ville
+	-rue
+	-Horaire (inclus sql ?)
+	-Login
+	-Mdp
+	-Mail
+	-Mail valider 
+	
+
+Info pour Client 
+	-id
+	-Nom
+	-Prenon
+	-CP
+	-Ville
+	-Rue
+	-Mail
+	-Login (de co)
+	-Mdp
+	-Mail valider
+
+
+Info table intermediaire PointRelais -> Producteur
+	-Deux id
+
+Info table intermediaire PointRelais -> Client
+	-Deux id 

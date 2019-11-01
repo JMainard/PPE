@@ -1,0 +1,21 @@
+body {
+	background-image: url("image/fraise.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+a{
+	text-decoration:none !important;
+}
+div.jumbotron {
+	margin-left:auto !important;
+	margin-right:auto !important;
+	width:45vw !important;
+}
+
+h1{
+	font-size:8vw !important; 
+}
+
+.connexion {
+}

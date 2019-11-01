@@ -1,0 +1,9 @@
+/* Feuille de style page de connexion */
+
+body
+{
+	background-image: url("image/test.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}

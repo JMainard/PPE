@@ -1,0 +1,132 @@
+<!--Chose a faire -->
+
+<html>
+	<head>
+			<title> Formulaire de connexion Producteur </title>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="formulaireProducteur.css" />
+
+			<link rel="icon" type="image/png" href="iconeProducteur.png" />
+	</head>
+	<body>
+			<form method="post" ></form>
+			
+<div class="card">
+
+    <h5 class="card-header info-color white-text text-center py-4">
+		<p  id="societe"> deloia </p>
+        <strong>Inscription entreprise</strong>
+		<img src="iconeProducteur.png" />
+		
+    </h5>
+
+
+
+    <div class="card-body px-lg-5 pt-0">
+					<!--Paragraphe de présentation du formulaire  -->
+				<p> Bonjour &agrave; toi entrepreneur; tu es la pour t'inscrire pour cela tu doit te munir de quelque information que tu ne doit pas connaitre par coeur comme ton num&eacute;ro de siret et tes num&eacute;mo de telephone fixe et mobile. Ensuite sache que chaque case est primordial pour ton inscription . </p>
+				<p> Après avoir fini ton inscription on devras vérifier tout les information en deux temps.
+					La premi&egrave;re est la v&eacute;rification de l'email .
+					dans un deuxi&egrave;me temps un administrateur vérifia tout les donnée entre elles pour savoir si elle correspondent cela duera entre 24h et 48h puis nous t'enverrons un mail de confirmation d'inscription tu pourras ensuie finir la description de ton entreprise et pouvoir commencer &agrave; vendre :) . </p> 
+				<p> Pour finir tout les champs doivent être obligatoirement remplis <p>
+
+
+        <form class="md-form" style="color: #757575;" method="POST" action="formulaireProducteur.php" >
+
+		<select class="browser-default custom-select" name="genre" value="Monsieur" >
+		<option selected >Choisisssez votre genre:</option>
+		<option value="Monsieur">Monsieur</option>
+		<option value="Madame">Madame</option>
+		<option value="Autres">Autres</option>
+		</select>
+
+                    <label for="prenom">Pr&eacute;nom</label>
+                    <input id="prenom" value="Jeremy" name="prenom" class="form-control" placeholder="Pr&eacute;nom" type="text"  onChange="verification('prenom')" required>
+
+                    <label for="nom">Nom</label>
+                    <input id="nom" name="nom" value="Mainard" class="form-control" placeholder="Nom" type="text"  onChange="verification('nom')" required>
+
+					<label for="companyName">Nom de votre entreprise</label>
+                    <input id="companyName" name="companyName" value="deolia" class="form-control" placeholder="Nom de l'entreprise" type="text"  onChange="verification('companyName')" required>
+
+ 					<label for="companyRegister">N°Siret</label>
+                    <input id="companyRegister" value="00000000000000" name="companyRegister" class="form-control" placeholder="ex : XXX XXX XXX XXXXX " type="text"  onChange="verification('companyRegister')" required>
+
+
+					
+                    <label for="phoneNumber">Num&eacute;ro de t&eacute;l&eacute;phone fixe </label>
+                    <input id="phoneNumber" value="0254725596" name="phoneNumber"  class="form-control" placeholder="Entrez votre num&eacute;ro de t&eacute;l&eacute;phone fixe "  type="tel" pattern="[0-9]{10}"  onChange="verification('phoneNumber')" required>
+
+                    <label for="phoneNumberMobile">Num&eacute;ro de t&eacute;l&eacute;phone mobile </label>
+                    <input id="phoneNumberMobile" name="phoneNumberMobile" value="0675841098" class="form-control" placeholder="Entrez votre num&eacute;ro de t&eacute;l&eacute;phone mobile"  type="tel" pattern="[0-9]{10}"  onChange="verification('phoneNumberMobile')" required>
+
+
+					<label for="city"> Ville </label>
+					<input id="city" value="Bologne" name="city" class="form-control" placeholder="Entrez votre ville" type="text"  onChange="verification('city')" required>
+
+					<label for="postCode"> Code postal </label>
+					<input id="postCode" value="41100" name="postCode" class="form-control" placeholder="Entrez votre code postal" type="text"  onChange="verification('postCode')" required>
+
+					<label for="address"> Adresse  </label>
+					<input id="address" value="13 rue pasteur" name="address" class="form-control" placeholder="Entrez votre adresse ( numero de rue + nom de la ville )" type="text" onChange="verification('address')" required>
+		
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" value="mainard17@outlook.fr" class="form-control" placeholder="E-mail" type="email" onChange="verification('email')" required>
+
+ 					<label for="login">Identifiant</label>
+                    <input id="login" name="login" class="form-control" value="mainard4" placeholder="Entrez votre identifiant qui vous permettra de vous connecter" type="text" onChange="verification('login')" required>
+
+
+					
+                    <label for="password">Mot de passe</label>
+                    <input id="password" value="Azerty01" name="password" class="form-control" name="mdp" aria-describedby="passwordHelpBlock" type="password" onChange="pwdVerification('password')" required>
+
+                    <small id="passwordHelpBlock" class="form-text text-muted mb-4">
+                        Entrez au moins 8 lettres et 1 chiffre
+                    </small> 
+
+				    <label for="passwordVerification">Confirmation de mot passe</label>
+                    <input id="passwordVerification" value="Azerty01" name="passwordVerification" class="form-control" name="mdpVerification" aria-describedby="passwordVerificationHelpBlock" type="password" onChange="pwdVerificationTest('passwordVerification')" required>
+
+                    <small id="passwordVerificationHelpBlock" class="form-text text-muted mb-4">
+                        Entrez &agrave; nouveau votre mot de passe
+                    </small>
+                        
+
+
+
+            <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" name="submit" >Sign in</button>
+
+            <div class="text-center">
+                <p>or sign up with:</p>
+
+                <a type="button" class="btn-floating btn-fb btn-sm">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a type="button" class="btn-floating btn-tw btn-sm">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a type="button" class="btn-floating btn-li btn-sm">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a type="button" class="btn-floating btn-git btn-sm">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <hr>                
+					<p>By clicking
+
+                    <em>Sign up</em> you agree to our
+                    <a href="" target="_blank">terms of service</a> and
+                    <a href="" target="_blank">terms of service</a>. </p>
+            </div>
+
+        </form>
+    </div>
+</div>
+ 	 <script src="formulaireProducteur.js"> </script> 
+
+	</body>
+</html>
